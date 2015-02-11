@@ -1,0 +1,50 @@
+"CSX-1 Scalars":
+  EpicsScaler:
+    pimte_tot1:
+      record: XF:23ID1-ES{Dif-Cam:PIMTE}Stats1:Total_RBV
+      numchan: 32
+  EpicsSignal:
+    sclr_trig:
+      read_pv: XF:23ID1-ES{Sclr:1}.CNT
+    sclr_ch1:
+      read_pv: XF:23ID1-ES{Sclr:1}.S1
+    sclr_ch2:
+      read_pv: XF:23ID1-ES{Sclr:1}.S2
+    sclr_ch3:
+      read_pv: XF:23ID1-ES{Sclr:1}.S3
+    sclr_ch4:
+      read_pv: XF:23ID1-ES{Sclr:1}.S4
+    sclr_ch5:
+      read_pv: XF:23ID1-ES{Sclr:1}.S5
+    sclr_ch6:
+      read_pv: XF:23ID1-ES{Sclr:1}.S6
+    temp_a:
+      read_pv: XF:23ID1-ES{TCtrl:1-Chan:A}T-I
+    temp_b:
+      read_pv: XF:23ID1-ES{TCtrl:1-Chan:B}T-I
+
+"Area detector beam instrumentation":
+  ProsilicaDetector:
+    fs1_cam:
+      prefix: XF:23IDA-BI:1{FS:1-Cam:1}
+    diag3_cam:
+      prefix: XF:23ID1-BI{Diag:3-Cam:1}
+    diag5_cam:
+      prefix: XF:23ID1-BI{Diag:5-Cam:1}
+    diag6_cam:
+      prefix: XF:23ID1-BI{Diag:6-Cam:1}
+    dif_beam_cam:
+      prefix: XF:23ID1-ES{Dif-Cam:Beam}
+
+"Princeton CCD Camera":
+  EpicsSignal:
+    pimte_tot1:
+      read_pv: XF:23ID1-ES{Dif-Cam:PIMTE}Stats1:Total_RBV
+    pimte_tot2:
+      read_pv: XF:23ID1-ES{Dif-Cam:PIMTE}Stats2:Total_RBV
+    pimte_tot3:
+      read_pv: XF:23ID1-ES{Dif-Cam:PIMTE}Stats3:Total_RBV
+    pimte_tot4:
+      read_pv: XF:23ID1-ES{Dif-Cam:PIMTE}Stats4:Total_RBV
+    pimte_tot5:
+      read_pv: XF:23ID1-ES{Dif-Cam:PIMTE}Stats5:Total_RBV
